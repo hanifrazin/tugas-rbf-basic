@@ -2,7 +2,7 @@
 
 *** Test Cases ***
 Looping Ganjil Genap dengan For Loop di Robot Framework
-    FOR    ${i}    IN RANGE    1    11
+    FOR    ${i}    IN RANGE    1    10
         Log    Iterasi ke-${i}
         ${hasil}    Evaluate    ${i} % 2
         IF    ${hasil} == ${0}
