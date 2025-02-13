@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.8 on darwin)" generated="2025-02-13T12:56:12.025031" rpa="false" schemaversion="5">
+<suite id="s1" name="Tugas Rbf Basic Hanif" source="/Users/user/Desktop/tugas-rbf-basic/tugas_rbf_basic_hanif.robot">
+<test id="s1-t1" name="Looping Ganjil Genap dengan For Loop di Robot Framework" line="4">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.043978" level="INFO">Iterasi ke-1</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.043869" elapsed="0.000146"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.044196" level="INFO">${hasil} = 1</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.044085" elapsed="0.000125"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.044483" elapsed="0.000011"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.044258" elapsed="0.000253"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.044626" level="INFO">1-Ganjil</msg>
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.044566" elapsed="0.000081"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.044526" elapsed="0.000137"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.044244" elapsed="0.000430"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-02-13T12:56:12.043629" elapsed="0.001059"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.044916" level="INFO">Iterasi ke-2</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.044804" elapsed="0.000132"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.045068" level="INFO">${hasil} = 0</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.044979" elapsed="0.000100"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.045404" level="INFO">2-Genap</msg>
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.045350" elapsed="0.000073"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.045112" elapsed="0.000326"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.045486" elapsed="0.000008"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.045450" elapsed="0.000057"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.045103" elapsed="0.000413"/>
+</if>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-02-13T12:56:12.044764" elapsed="0.000764"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.045673" level="INFO">Iterasi ke-3</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.045622" elapsed="0.000069"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.045808" level="INFO">${hasil} = 1</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.045731" elapsed="0.000088"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.046017" elapsed="0.000008"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.045851" elapsed="0.000188"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.046136" level="INFO">3-Ganjil</msg>
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.046085" elapsed="0.000068"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.046050" elapsed="0.000116"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.045842" elapsed="0.000333"/>
+</if>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-02-13T12:56:12.045592" elapsed="0.000594"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.046324" level="INFO">Iterasi ke-4</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.046275" elapsed="0.000068"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.046458" level="INFO">${hasil} = 0</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.046383" elapsed="0.000085"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.046713" level="INFO">4-Genap</msg>
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.046663" elapsed="0.000069"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.046497" elapsed="0.000249"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.046791" elapsed="0.000008"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.046757" elapsed="0.000055"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.046489" elapsed="0.000332"/>
+</if>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-02-13T12:56:12.046245" elapsed="0.000587"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.046970" level="INFO">Iterasi ke-5</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.046921" elapsed="0.000068"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.047097" level="INFO">${hasil} = 1</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.047025" elapsed="0.000082"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.047297" elapsed="0.000008"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.047137" elapsed="0.000182"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.047413" level="INFO">5-Ganjil</msg>
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.047361" elapsed="0.000070"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.047330" elapsed="0.000115"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.047129" elapsed="0.000325"/>
+</if>
+<var name="${i}">5</var>
+<status status="PASS" start="2025-02-13T12:56:12.046892" elapsed="0.000573"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.047608" level="INFO">Iterasi ke-6</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.047554" elapsed="0.000072"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.047735" level="INFO">${hasil} = 0</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.047664" elapsed="0.000136"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.048039" level="INFO">6-Genap</msg>
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.047991" elapsed="0.000066"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.047832" elapsed="0.000239"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.048118" elapsed="0.000008"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.048082" elapsed="0.000056"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.047823" elapsed="0.000325"/>
+</if>
+<var name="${i}">6</var>
+<status status="PASS" start="2025-02-13T12:56:12.047525" elapsed="0.000634"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.048297" level="INFO">Iterasi ke-7</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.048248" elapsed="0.000067"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.048424" level="INFO">${hasil} = 1</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.048352" elapsed="0.000083"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.048619" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.048464" elapsed="0.000178"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.048733" level="INFO">7-Ganjil</msg>
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.048685" elapsed="0.000065"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.048653" elapsed="0.000111"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.048456" elapsed="0.000317"/>
+</if>
+<var name="${i}">7</var>
+<status status="PASS" start="2025-02-13T12:56:12.048219" elapsed="0.000565"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.048921" level="INFO">Iterasi ke-8</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.048872" elapsed="0.000066"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.049046" level="INFO">${hasil} = 0</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.048977" elapsed="0.000079"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.049285" level="INFO">8-Genap</msg>
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.049237" elapsed="0.000065"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.049084" elapsed="0.000232"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.049358" elapsed="0.000007"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.049326" elapsed="0.000051"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.049076" elapsed="0.000310"/>
+</if>
+<var name="${i}">8</var>
+<status status="PASS" start="2025-02-13T12:56:12.048843" elapsed="0.000554"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.049531" level="INFO">Iterasi ke-9</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.049483" elapsed="0.000132"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.049729" level="INFO">${hasil} = 1</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.049654" elapsed="0.000084"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.050108" elapsed="0.000018"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.049767" elapsed="0.000385"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.050318" level="INFO">9-Ganjil</msg>
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.050210" elapsed="0.000135"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.050167" elapsed="0.000195"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.049760" elapsed="0.000613"/>
+</if>
+<var name="${i}">9</var>
+<status status="PASS" start="2025-02-13T12:56:12.049456" elapsed="0.000931"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.050566" level="INFO">Iterasi ke-10</msg>
+<arg>Iterasi ke-${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.050504" elapsed="0.000082"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.050729" level="INFO">${hasil} = 0</msg>
+<var>${hasil}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.050631" elapsed="0.000110"/>
+</kw>
+<if>
+<branch type="IF" condition="${hasil} == ${0}">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T12:56:12.051015" level="INFO">10-Genap</msg>
+<arg>${i}-Genap</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T12:56:12.050962" elapsed="0.000072"/>
+</kw>
+<status status="PASS" start="2025-02-13T12:56:12.050774" elapsed="0.000275"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>${i}-Ganjil</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-13T12:56:12.051099" elapsed="0.000007"/>
+</kw>
+<status status="NOT RUN" start="2025-02-13T12:56:12.051061" elapsed="0.000059"/>
+</branch>
+<status status="PASS" start="2025-02-13T12:56:12.050765" elapsed="0.000364"/>
+</if>
+<var name="${i}">10</var>
+<status status="PASS" start="2025-02-13T12:56:12.050469" elapsed="0.000671"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>11</value>
+<status status="PASS" start="2025-02-13T12:56:12.043460" elapsed="0.007694"/>
+</for>
+<status status="PASS" start="2025-02-13T12:56:12.043280" elapsed="0.007965"/>
+</test>
+<status status="PASS" start="2025-02-13T12:56:12.025779" elapsed="0.025663"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tugas Rbf Basic Hanif" id="s1" pass="1" fail="0" skip="0">Tugas Rbf Basic Hanif</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
